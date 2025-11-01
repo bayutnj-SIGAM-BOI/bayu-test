@@ -1,0 +1,145 @@
+.title h1 {
+  padding-top: 150px;
+  text-align: center;
+  font-family: "Circular Std", sans-serif;
+  letter-spacing: 2px;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.text-sub {
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("/fonts/CircularStd-Book.woff2") format("woff2");
+}
+
+/* ===== CONTACT SECTION ===== */
+.page-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 40px;
+  border-radius: 30px;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.left-side {
+  flex: 1 1 350px;
+  min-width: 280px;
+  animation: fadeIn 0.9s ease;
+}
+
+.left-side h1 {
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-size: 2.3rem;
+}
+
+.contact-content-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+span {
+  text-align: start;
+}
+
+.contact-content-inputs input,
+.contact-content-inputs textarea {
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 1rem;
+  resize: none;
+}
+
+.contact-content-inputs input:focus,
+.contact-content-inputs textarea:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.checkbox-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.send-button button {
+  background-color: #0000006a;
+  border: 2px solid transparent;
+  color: white;
+  padding: 1rem 4rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.send-button button:hover {
+  background-color: var(--accent-color);
+  color: black;
+  transform: translateY(-3px);
+}
+
+/* ===== SIDE CONTACT CONTENT ===== */
+.side-content {
+  flex: 1 1 300px;
+  padding: 1rem;
+}
+
+.side-content h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.Via-chat a,
+.call-us a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.Via-chat svg {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Via-chat a:hover,
+.call-us a:hover {
+  color: var(--gold-color);
+}
+
+/* ===== MAP SECTION ===== */
+.visit-us {
+  text-align: center;
+  margin: 4rem ;
+}
+
+.visit-us h2 {
+  margin-bottom: 2rem;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+.visit-us iframe {
+  height: 50vh;
+  border-radius: 1.5rem;
+  max-width: 900px;
+  border: 2px solid rgb(239, 224, 224);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
