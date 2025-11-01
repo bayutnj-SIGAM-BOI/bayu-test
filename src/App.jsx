@@ -2,7 +2,6 @@ import { HashRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 
 import Navbar from './components/Navbar'
-import Footer from './components/footer'
 
 import Contact from './components/pages/Contact'
 import Documentation from './components/pages/Documentation'
